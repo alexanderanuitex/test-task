@@ -71,6 +71,7 @@ const StartView = (props) => {
             variant="contained"
             color="primary"
             type="button"
+            disabled={!address}
             onClick={() => props.goToWizzard(true, 1, {address})}
             className={styles.searchBtn}
           >
