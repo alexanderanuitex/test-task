@@ -1,0 +1,27 @@
+.summaryContainer {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #646464;
+    line-height: 1.5rem;
+
+}
+
+.summaryInner {
+    padding: 0.625rem;
+    background-color: #fff;
+    font-size: 13px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
+}
+
+.summaryValue {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #222;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.summarySign {
+    margin: 0 5px;
+}

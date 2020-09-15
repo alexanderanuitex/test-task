@@ -1,0 +1,427 @@
+{
+    "priceList": [
+        {
+            "title": "ADU Package",
+            "fromPrice": "10000",
+            "toPrice": "20000",
+            "layoutConsulting": "Layout consulting",
+            "layoutDesign": "Layout design",
+            "planningPermits": "Planning Permits",
+            "buildingPermits": "Building Permits",
+            "renderings": "3D renderings - 3",
+            "walkthrough": "3D walkthrough",
+            "fromMonth": "6",
+            "toMonth": "12",
+            "type": 0
+        },
+        {
+            "title": "New Home",
+            "fromPrice": "40000",
+            "toPrice": "50000",
+            "layoutConsulting": "Layout consulting",
+            "layoutDesign": "Layout design",
+            "planningPermits": "Planning Permits",
+            "buildingPermits": "Building Permits",
+            "renderings": "3D renderings - 5",
+            "walkthrough": "3D walkthrough",
+            "fromMonth": "6",
+            "toMonth": "12",
+            "type": 1
+        },
+        {
+            "title": "Home Remodel",
+            "fromPrice": "40000",
+            "toPrice": "50000",
+            "layoutConsulting": "Layout consulting",
+            "layoutDesign": "Layout design",
+            "planningPermits": "Planning Permits",
+            "buildingPermits": "Building Permits",
+            "renderings": "3D renderings - 5",
+            "walkthrough": "3D walkthrough",
+            "fromMonth": "6",
+            "toMonth": "12",
+            "type": 2
+        }
+    ],
+    "typeLot": [
+        {
+            "title": "Flat",
+            "type": 0,
+            "imgUrl": "https://images.unsplash.com/photo-1539946309076-4daf2ea73899?ixlib=rb-1.2.1&w=1000&q=80"
+        },
+        {
+            "title": "Sloped",
+            "type": 1,
+            "imgUrl": "https://image.winudf.com/v2/image1/Y29tLndhbGxwYXBlcnMuYWhkcGlfc2NyZWVuXzE0XzE1NjcwOTU1ODZfMDMz/screen-14.jpg?fakeurl=1&type=.jpg"
+        },
+        {
+            "title": "Steep",
+            "type": 2,
+            "imgUrl": "https://i.ytimg.com/vi/r0m31joZaoE/maxresdefault.jpg"
+        }
+    ],
+    "architecturalPlan": [
+        {
+            "type": 0,
+            "text": "Yes, I'd like to work with DreamHouse.ai’s"
+        },
+        {
+            "type": 1,
+            "text": "I already have a complete set of architectual plans  "
+        },
+        {
+            "type": 2,
+            "text": "I'm already in process with my own architect, or will choose my own architect"
+        },
+        {
+            "type": 3,
+            "text": "I'm not sure"
+        }
+    ],
+    "ideas": [
+        {
+            "type": 0,
+            "text": "I need inspiration from DreamHouse's architect and design team"
+        },
+        {
+            "type": 1,
+            "text": "I have conceptual architectual drawings"
+        },
+        {
+            "type": 2,
+            "text": "I have photos of what I want"
+        },
+        {
+            "type": 3,
+            "text": "I have an online idea book (Google, Dropbox, Houzz, Pinterest, etc)"
+        },
+        {
+            "type": 4,
+            "text": "I have sketches or drawings of what I want"
+        },
+        {
+            "type": 5,
+            "text": "Other"
+        }
+    ],
+    "homeStyles": [
+        {
+            "type": 0,
+            "imageUrl": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "title": "Bungalow, Craftsman, or Cottage"
+        },
+        {
+            "type": 1,
+            "imageUrl": "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "title": "Contemporary,Mid-Century, or Modern"
+        },
+        {
+            "type": 2,
+            "imageUrl": "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "title": "Coastal Contemporary"
+        },
+        {
+            "type": 3,
+            "imageUrl": "https://images.pexels.com/photos/323772/pexels-photo-323772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "title": "Farm House"
+        },
+        {
+            "type": 4,
+            "imageUrl": "https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "title": "Geogian, Queen Anne, or Victorian"
+        },
+        {
+            "type": 5,
+            "imageUrl": "https://images.pexels.com/photos/209315/pexels-photo-209315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "title": "Mediterranean or Spains"
+        },
+        {
+            "type": 6,
+            "imageUrl": "https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "title": "Ranch"
+        },
+        {
+            "type": 7,
+            "imageUrl": "https://images.pexels.com/photos/221024/pexels-photo-221024.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "title": "Other or not sure yet"
+        }
+    ],
+    "homeFeatures": [
+        {
+            "type": 0,
+            "text": "Bedrooms",
+            "value": 0
+        },
+        {
+            "type": 1,
+            "text": "Bathrooms",
+            "value": 0
+        },
+        {
+            "type": 2,
+            "text": "Den / Office",
+            "value": 0
+        },
+        {
+            "type": 3,
+            "text": "Stories",
+            "value": 0
+        },
+        {
+            "type": 4,
+            "text": "Garage (number of cars)",
+            "value": 0
+        }
+    ],
+    "garageTypes": [
+        {
+            "text": "Attached",
+            "type": 0
+        },
+        {
+            "text": "Detached",
+            "type": 1
+        },
+        {
+            "text": "CarPort",
+            "type": 2
+        }
+    ],
+    "kitchenLevels": [
+        {
+            "type": 0,
+            "title": "Standart",
+            "imageUrl": "https://images.pexels.com/photos/4119833/pexels-photo-4119833.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "text": "A standart kitchen might include things like:",
+            "descriptions": [
+                "4-bumer gas or electric cooktop",
+                "Single oven",
+                "Standart stainless steel appliances",
+                "Granite counters"
+            ]
+        },
+        {
+            "type": 1,
+            "title": "Upscale",
+            "imageUrl": "https://images.pexels.com/photos/349749/kitchen-stove-sink-kitchen-counter-349749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "text": "An upscale kitchen might include things like:",
+            "descriptions": [
+                "5-bumer gas or electric cooktop",
+                "Wall oven - microwave combo",
+                "Standart stainless steel appliances",
+                "Granite counters"
+            ]
+        },
+        {
+            "type": 2,
+            "title": "Luxury",
+            "imageUrl": "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "text": "A luxury kitchen might include things like:",
+            "descriptions": [
+                "6-bumer gas or electric cooktop",
+                "Double ovens",
+                "Professional series appliances",
+                "Granite or quartz counters",
+                "Custom style cabinets"
+            ]
+        }
+    ],
+    "interiorLevels": [
+        {
+            "type": 0,
+            "title": "Standart",
+            "imageUrl": "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "text": "Standart rooms might include things like:",
+            "descriptions": [
+                "Hollow core doors",
+                "Vinyl white windows",
+                "Carpet",
+                "Ceramic tile entryway",
+                "Wi-Fi single-zone thermostat"
+            ]
+        },
+        {
+            "type": 1,
+            "title": "Upscale",
+            "imageUrl": "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "text": "Upscale rooms might include things like:",
+            "descriptions": [
+                "9 ceilings",
+                "Vilnyl white or bronze windows",
+                "Carpet and vinyl plark flooring",
+                "Ceramic tile entryway",
+                "Wi-Fi multi-zone thermostat"
+            ]
+        },
+        {
+            "type": 2,
+            "title": "Luxury",
+            "imageUrl": "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "text": "Luxury rooms might include things like:",
+            "descriptions": [
+                "Spacious ceilings w/crown molding",
+                "Solid core doors",
+                "Vinyl windows in select colors",
+                "Hardwood flooring options",
+                "NEST custom zone thermostat"
+            ]
+        }
+    ],
+    "landscapeLevels": [
+        {
+            "type": 0,
+            "title": "Standart",
+            "imageUrl": "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "text": "Standart landscaping might include things like:",
+            "descriptions": [
+                "Grass",
+                "Plants",
+                "Shrubs"
+            ]
+        },
+        {
+            "type": 1,
+            "title": "Upscale",
+            "imageUrl": "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "text": "Upscale landscaping might include things like:",
+            "descriptions": [
+                "Grass",
+                "Plants",
+                "Shrubs",
+                "Trees",
+                "Small backyard patio"
+            ]
+        },
+        {
+            "type": 2,
+            "title": "Luxury",
+            "imageUrl": "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "text": "Luxury landscaping might include things like:",
+            "descriptions": [
+                "Grass",
+                "Plants",
+                "Shrubs",
+                "Trees",
+                "Backyard entertaining patio"
+            ]
+        },
+        {
+            "type": 3,
+            "title": "Don't include landscaping",
+            "imageUrl": "",
+            "text": null,
+            "descriptions": []
+        }
+    ],
+    "financePlans": [
+        {
+            "type": 0,
+            "text": "Construction loan"
+        },
+        {
+            "type": 1,
+            "text": "Insurance payment from loss"
+        },
+        {
+            "type": 2,
+            "text": "Cash"
+        },
+        {
+            "type": 3,
+            "text": "I'm not sure"
+        }
+    ],
+    "visionToLife": {
+        "baseline": 684000,
+        "highEnd": 836000
+    },
+    "meetingVariants": [
+        {
+            "type": 0,
+            "text": "My current residence",
+            "address": ""
+        },
+        {
+            "type": 1,
+            "text": "Property address",
+            "address": "216 Mountain View Avenue, Mountain View, California, USA"
+        },
+        {
+            "type": 2,
+            "text": "DreamHouse.ai office",
+            "address": "1580 West El Camino Real, Suite 5, Mountain View CA 94040"
+        },
+        {
+            "type": 3,
+            "text": "Using a Google hangout",
+            "address": ""
+        },
+        {
+            "type": 4,
+            "text": "Phone Call",
+            "address": "Have someone call me"
+        }
+    ],
+    "successResponse": {
+        "nextSteps": [
+            {
+                "type": "Meeting",
+                "due": null,
+                "date": "Monday, August 31st @ 3:00 PM",
+                "status": "Confirmed"
+            },
+            {
+                "type": "Due",
+                "due": 1000,
+                "date": null,
+                "status": "None"
+            },
+            {
+                "type": "Estimate",
+                "due": null,
+                "date": "September 2020",
+                "status": "None"
+            }
+        ],
+        "team": [
+            {
+                "imageUrl": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "fullName": "Michael Carter",
+                "position": "Account Executive"
+            },
+            {
+                "imageUrl": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "fullName": "Jon Cromwell",
+                "position": "Construction"
+            },
+            {
+                "imageUrl": "https://images.pexels.com/photos/2169434/pexels-photo-2169434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "fullName": "Courtney Lacy",
+                "position": "Project Concierge"
+            },
+            {
+                "imageUrl": "https://images.pexels.com/photos/1006227/pexels-photo-1006227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "fullName": "Kristi Paganini",
+                "position": "Design"
+            },
+            {
+                "imageUrl": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "fullName": "Farren Crabtree",
+                "position": "Construction"
+            },
+            {
+                "imageUrl": "https://images.pexels.com/photos/2118052/pexels-photo-2118052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "fullName": "Julia Donoho",
+                "position": "Rebuild Strategist"
+            },
+            {
+                "imageUrl": "https://images.pexels.com/photos/2091327/pexels-photo-2091327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "fullName": "Josh Jonson",
+                "position": "Estimating"
+            }
+        ]
+    },
+    "price": {
+        "oneSqFt": 350
+    }
+}

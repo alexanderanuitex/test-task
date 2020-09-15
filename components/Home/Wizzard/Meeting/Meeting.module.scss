@@ -1,0 +1,38 @@
+.whenSelect {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+}
+
+.whereRadioContainer {
+    margin-top: 3rem;
+}
+
+.schedule {
+    font-weight: 700;
+}
+
+.radioGroup {
+    margin-top: 1rem;
+    > label {
+        margin-bottom: 1.25rem;
+        align-items: flex-start;
+        > span {
+            padding-top: 0;
+            &:last-child {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+.itemAddress {
+    font-size: 0.875rem;
+    color: #646464;
+    font-weight: 400;
+}
+
+.inputField {
+    width: 100%;
+}

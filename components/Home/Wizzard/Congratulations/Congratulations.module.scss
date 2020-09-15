@@ -1,0 +1,130 @@
+.finalWrapper {
+    max-width: 400px;
+    > p {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #646464;
+        line-height: 1.5rem;
+    }
+}
+
+.finalList {
+    margin-top: 1.875rem;
+}
+
+.finalItem {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1.25rem;
+    min-height: 65px;
+    &:last-child {
+        &:after {
+            content: none;
+        }
+    }
+    &:before {
+        content: '';
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 12px;
+        border: 2px solid #00e676;
+        color: #fff;
+        font-size: 1.25rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 11px;
+        top: 2rem;
+        bottom: 0;
+        width: 1px;
+        background-color: #00e676;
+    }
+    &.active {
+        &:before {
+            background-color: #00e676;
+            background: url(/images/check.svg) #00e676 no-repeat center 3px / 1rem 1rem;
+        }
+    }
+}
+
+.finalTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.finalSubtitle {
+    color: #646464;
+    font-size: 13px;
+    display: block;
+}
+
+.finalInfoText {
+    color: #646464;
+    font-size: 13px;
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.btnPayDeposit {
+    margin-top: 1rem !important;
+}
+
+.teamContainer {
+    > h3 {
+        font-weight: 600;
+        font-size: 1.625rem;
+    }
+    > p {
+        display: block;
+        max-width: 300px;
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        color: #646464;
+    }
+}
+
+.teamList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.875rem;
+}
+
+.teamItem {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.teamPhoto {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.personName {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.personPost {
+    display: block;
+    margin-top: 0.375rem;
+    color: #646464;
+    font-size: 13px;
+    font-weight: 600;
+}

@@ -1,0 +1,34 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 6px #eee;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.headerLogo {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+  li {
+    margin-right: 1.25rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}

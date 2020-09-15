@@ -1,0 +1,102 @@
+.homeItem {
+    margin-bottom: 1.25rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 1.25rem;
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        transition: box-shadow .3s, opacity .3s;
+        opacity: 0.6;
+        &:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            opacity: 1;
+        }
+    }
+    input {
+        display: none;
+        &:checked {
+            ~ label {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                opacity: 1;
+                .radioButton {
+                    &:before {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cardInfo {
+    display: flex;
+    img {
+        display: block;
+        width: 35%;
+        height: 100%;
+        object-fit: cover;
+    }
+    nav {
+        width: 70%;
+        padding: 0.625rem 1.25rem;
+        font-weight: 600;
+        > span {
+            display: block;
+            margin-bottom: 0.625rem;
+        }
+    }
+    ul {
+        list-style: disc;
+        padding-left: 1.25rem;
+    }
+    li {
+        margin-bottom: 0.375rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.radioButtonGroup {
+    display: flex;
+    align-items: center;
+    padding: 0.625rem;
+    border-bottom: 1px solid #F5F5F5;
+    span {
+        font-weight: 700;
+    }
+}
+
+.radioButton {
+    border: 1px solid #000;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    transition: .3s;
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background: #000;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        transform: scale(0);
+        transition: .3s;
+    }
+}
+
+.subinfoList {
+    display: block;
+    margin-top: 0.625rem;
+    font-weight: 600;
+}
