@@ -17,7 +17,7 @@ import FinancePlan from "./FinancePlan/FinancePlan";
 import Landscape from "./Landscape/Landscape";
 import InteriorFinishing from "./InteriorFinishing/InteriorFinishing";
 
-const Wizzard = (props) => {
+const Wizard = (props) => {
   return (
     <div>
       {props.step === 1 ? (
@@ -187,4 +187,4 @@ const Wizzard = (props) => {
   );
 };
 
-export default Wizzard;
+export default Wizard;

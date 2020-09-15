@@ -2,10 +2,10 @@ import { useState, useEffect, useReducer } from "react";
 import ProgressBar from "../components/Home/ProgressBar/ProgressBar";
 import Header from '../components/common/Header/Header';
 import Summary from "../components/Home/Summary/Summary";
-import Wizzard from "../components/Home/Wizzard/Wizzard";
+import Wizard from "../components/Home/Wizard/Wizard";
 import StartView from "../components/Home/StartView/StartView";
 import styles from "./index.module.scss";
-import WizzardService from "../shared/services/wizzard.service";
+import WizardService from "../shared/services/Wizard.service";
 
 const initialState = { step: 0, typeHome: 0 };
 
@@ -41,7 +41,7 @@ const Home = ({ questions }) => {
       result,
       step,
       completedStep,
-    } = WizzardService.getLocalStoregeWizzard();
+    } = WizardService.getLocalStoregeWizard();
     if (result) {
       setResult({ ...result });
       setCompletedStep(completedStep);
@@ -49,7 +49,7 @@ const Home = ({ questions }) => {
     }
   }, []);
   useEffect(() => {
-    WizzardService.setLocalStorge(result, state.step, completedStep);
+    WizardService.setLocalStorge(result, state.step, completedStep);
   }, [result, state.step, completedStep]);
 
   useEffect(() => {
@@ -127,7 +127,7 @@ const Home = ({ questions }) => {
     }
     dispatch({ type: "prevStep", payload: number });
   };
-  const goToWizzard = (address, number, value) => {
+  const goToWizard = (address, number, value) => {
     setIsAddress(address);
     nextStep(number, value);
   };
@@ -143,7 +143,7 @@ const Home = ({ questions }) => {
           <div className={styles.gridContainer}>
             <StartView
               priceList={questions.priceList}
-              goToWizzard={goToWizzard}
+              goToWizard={goToWizard}
               result={result}
             />
           </div>
@@ -155,7 +155,7 @@ const Home = ({ questions }) => {
                 state.step >= 6 ? <Summary price={result.price}/> : null 
               }
             </div> 
-            <Wizzard
+            <Wizard
               isAddress={isAddress}
               step={state.step}
               nextStep={nextStep}
@@ -173,7 +173,7 @@ const Home = ({ questions }) => {
 };
 
 Home.getInitialProps = async () => {
-  const questions = await WizzardService.getQuestions();
+  const questions = await WizardService.getQuestions();
   return { questions };
 };
 export default Home;
