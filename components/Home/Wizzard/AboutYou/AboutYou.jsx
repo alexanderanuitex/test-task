@@ -31,10 +31,17 @@ const AboutYou = (props) => {
       email: "",
     }
   );
+  const [touched, setTouched] = useState({
+    firstName: false,
+    lastName: false,
+    phone: false,
+    email: false,
+  });
   const [isValid, setIsValid] = useState(false);
+ const [emailError, setEmailError] = useState(false);
+  const emailPattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
   const validationForm = () => {
-    const emailPattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
     if (
       aboutYou.firstName !== "" &&
       aboutYou.lastName !== "" &&
@@ -52,19 +59,50 @@ const AboutYou = (props) => {
   }, [aboutYou]);
 
   const handleChange = (event) => {
-    setAboutYou({ ...aboutYou, [event.target.name]: event.target.value });
+    if (event.target.name === "email") {
+      setEmailError(emailPattern.test(event.target.value));
+    }
+    setAboutYou({
+      ...aboutYou,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleTouch = (event) => {
+    if (touched[event.target.name] != true) {
+      setTouched({
+        ...touched,
+        [event.target.name]: true,
+      });
+    }
   };
 
   const formRender = () => {
-    return userInfo.map((item, index) => (
-      <TextField
-        label={item.label}
-        key={index}
-        name={item.name}
-        defaultValue={aboutYou ? aboutYou[item.name] : ""}
-        onChange={handleChange}
-      />
-    ));
+    return userInfo.map((item, index) => {
+      return item.name !== "email" ? (
+        <TextField
+          label={item.label}
+          key={index}
+          name={item.name}
+          error={aboutYou[item.name] === "" && touched[item.name]}
+          helperText={aboutYou[item.name] === "" && touched[item.name] ? "Required!" : ""}
+          defaultValue={aboutYou ? aboutYou[item.name] : ""}
+          onBlur={handleTouch}
+          onChange={handleChange}
+        />
+      ) : (
+        <TextField
+          label={item.label}
+          key={index}
+          name={item.name}
+          error={!emailError && touched.email}
+          helperText={!emailError && touched.email ? "Required!" : ""}
+          onBlur={handleTouch}
+          defaultValue={aboutYou ? aboutYou[item.name] : ""}
+          onChange={handleChange}
+        />
+      );
+    });
   };
 
   return (
@@ -81,7 +119,7 @@ const AboutYou = (props) => {
         {formRender()}
       </form>
       <TextField
-        className='inputMoreInfo'
+        className="inputMoreInfo"
         id="standard-basic"
         label="Sometnig else we should know ?"
       />
