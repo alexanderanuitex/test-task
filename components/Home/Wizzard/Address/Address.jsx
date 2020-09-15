@@ -14,7 +14,7 @@ const Address = (props) => {
       prevStep={props.prevStep}
       nextStep={props.nextStep}
       step={props.step}
-      isValid={true}
+      isValid={address ? true : false}
       value={{address}}
     >
       <AddressComplete  newAddress={newAddress}/>

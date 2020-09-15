@@ -4,7 +4,6 @@ import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import TextField from "@material-ui/core/TextField";
-import styles from "./FinancePlan.module.scss";
 
 const FinancePlan = (props) => {
   const [financePlans, setFinancePlans] = useState(
