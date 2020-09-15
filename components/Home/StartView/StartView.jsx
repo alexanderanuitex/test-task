@@ -66,7 +66,7 @@ const StartView = (props) => {
         </p>
         <h1 className={styles.searchTitle}>Where do you want to build?</h1>
         <form className={styles.searchAddress} noValidate autoComplete="off">
-          <AddressComplete newAddress={newAddress}/>
+          <AddressComplete newAddress={newAddress}  address={props.result.address}/>
           <Button
             variant="contained"
             color="primary"

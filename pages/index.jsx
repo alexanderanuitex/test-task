@@ -144,6 +144,7 @@ const Home = ({ questions }) => {
             <StartView
               priceList={questions.priceList}
               goToWizzard={goToWizzard}
+              result={result}
             />
           </div>
         ) : (

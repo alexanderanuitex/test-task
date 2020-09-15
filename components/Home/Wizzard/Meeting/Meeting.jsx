@@ -56,7 +56,7 @@ const Meeting = (props) => {
                 className={styles.inputField}
               />
             ) : (
-              <span className={styles.itemAddress}>{item.address}</span>
+              <span className={styles.itemAddress}>{item.text === 'Property address' ? props.result.address.description : item.address}</span>
             )}
           </div>
         }

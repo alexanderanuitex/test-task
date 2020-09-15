@@ -169,6 +169,7 @@ const Wizzard = (props) => {
           questions={props.questions.meetingVariants}
           meetingVariants={props.result.meetingVariants}
           selectedDate={props.result.selectedDate}
+          result={props.result}
         />
       ) : null}
 
