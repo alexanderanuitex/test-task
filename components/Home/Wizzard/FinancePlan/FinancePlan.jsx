@@ -53,7 +53,7 @@ const FinancePlan = (props) => {
 
   return (
     <QuestionWrapper
-      question="How do you plan to finance the build of your new [home]?"
+      question="How do you plan to finance the build of your new home?"
       questionDescription="Select all that apply."
       prevStep={props.prevStep}
       nextStep={props.nextStep}
