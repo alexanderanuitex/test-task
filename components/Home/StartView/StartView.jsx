@@ -47,7 +47,7 @@ const StartView = (props) => {
           className={styles.btnStartPlan}
           variant="contained"
           color="primary"
-          onClick={() => props.goToWizzard(false, 1, { typeHome: item.type })}
+          onClick={() => props.goToWizard(false, 1, { typeHome: item.type })}
         >
           Start now
         </Button>
@@ -72,7 +72,7 @@ const StartView = (props) => {
             color="primary"
             type="button"
             disabled={!address}
-            onClick={() => props.goToWizzard(true, 1, {address})}
+            onClick={() => props.goToWizard(true, 1, {address})}
             className={styles.searchBtn}
           >
             Next
