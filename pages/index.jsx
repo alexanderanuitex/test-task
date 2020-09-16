@@ -36,6 +36,7 @@ const Home = ({ questions }) => {
   let stepCountHome = 100 / 14;
   let stepCountRemodel = 100 / 12;
   let stepCountAdu = 100 / 11;
+  
   useEffect(() => {
     const {
       result,
