@@ -5,7 +5,7 @@ import Summary from "../components/Home/Summary/Summary";
 import Wizard from "../components/Home/Wizard/Wizard";
 import StartView from "../components/Home/StartView/StartView";
 import styles from "./index.module.scss";
-import WizardService from "../shared/services/Wizard.service";
+import WizardService from "../shared/services/wizard.service";
 
 const initialState = { step: 0, typeHome: 0 };
 
