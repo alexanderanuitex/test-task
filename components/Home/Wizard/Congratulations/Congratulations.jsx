@@ -14,8 +14,8 @@ const Congratulations = (props) => {
   let timeMeeting = moment(props.result.selectedDate).format("dddd, MMMM Do YYYY, h:mm a")
 
   const teamRender = () => {
-    return props.questions.team.map((item) => (
-      <li className={styles.teamItem}>
+    return props.questions.team.map((item, index) => (
+      <li key={index} className={styles.teamItem}>
         <img className={styles.teamPhoto} src={item.imageUrl} alt="photo" />
         <div className={styles.personInfo}>
           <span className={styles.personName}>{item.fullName}</span>
